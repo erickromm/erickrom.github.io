@@ -1,0 +1,506 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      background: #fff; /* pone un fondo blanco  */
+      font-family: "Open Sans", sans-serif;
+      font-family: 16px;
+      margin: 0;
+      padding: 0;
+  }
+ 
+.contenedor{
+    width: 90%; /* pone un margen en los lados */
+    max-width: 1000px;
+    margin: auto; /*centra el contenido */
+    overflow: hidden; /* si la proxima seccion toma espacio de este, oculta los elemntos del otro contenedor */
+}
+
+
+/*Poner el video en todo el header */
+
+
+
+  
+    video {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            overflow: hidden;
+
+    }
+
+
+
+    header{
+        background:#fff;
+ position: relative; 
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+    }
+
+
+
+/*estilos a la navegacion*/
+
+
+
+p{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+header .menu{
+    padding: 40px 0;
+    text-align: center;
+}
+@media (min-width: 768px){
+    header .menu {
+    text-align: right;
+}
+
+}
+
+header .menu a{
+    margin-right: 10px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 0.9em;
+    position: relative;
+}
+@media (min-width: 768px){
+
+    header .menu a {
+        margin: 0 20px;
+    }
+    header .menu a:last-child{
+        margin: 0;
+    }
+}
+
+
+
+header a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+
+
+/* empieza el cuadro  de mi presentacion*/
+div .name{
+    color: #fff;
+    text-align: center;
+
+}
+header .contenedor-texto{
+    display: flex;
+    justify-content: center; /* centra el contenido a lo ancho */
+    align-content: center;
+    margin: 145px 0;
+    margin-top: 134px;
+    position: relative;
+}
+
+header .contenedor-texto .texto{
+    border: 2px solid rgb(255, 255, 255, 0.5); /* sera un color blanco con transparencia */
+    border-radius: 11px; /* los borders se vean redondeados */
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+
+
+/*----Main---- seccion acercade */
+
+
+ .acercade{
+    text-align: center;
+    position: relative;
+    
+}
+.foto{
+    margin-bottom: -60px;
+    text-align: center;
+    position:absolute;
+    margin-top: -63px;
+    width: 100%;
+}
+
+ .foto img{
+    vertical-align: top; /*  alinea los elemtos hacia arriba */
+  border-radius: 60px;
+  
+
+
+}
+
+.cajaAcerca{
+    margin-top: 90px;
+}
+
+
+
+
+ .acercade .centenido-text{
+    margin-top: 2.5rem;
+     
+}
+
+.centenido-text .img-acerca{
+    margin-top: 1.8rem ;
+}
+
+.img-acerca img{
+    width: 85%;
+    border-radius: 2px;
+
+ }
+
+ .img-acerca img:hover {
+     filter: grayscale(80%);
+     transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    border-radius: 1rem;
+    }
+
+ .conte-parrafo{
+    text-align: left;
+    line-height : 22px;
+
+}
+
+
+
+@media (min-width: 768px){
+ .conte-princi  {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+.conte-parrafo{
+    text-align: left;
+    line-height : 25px;
+
+
+}
+
+}
+
+
+
+
+
+/* titulo es global para todos los titulos */
+.titulo{
+    font-weight: 300;
+    font-size: 34px;
+    margin: 40px 0px;
+    color: rgb(3,152, 158);
+    text-align: center;
+    text-transform: uppercase;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    width: 250px;
+    margin: 2rem auto
+}
+
+
+/*EMPIEZA OTRA SECCION acerca de */
+.experiencia{
+    
+    margin-top: 3rem;
+    border-width: 1px;
+    background: #f2f2f2;
+}
+
+
+.titulo-Experiencia {
+font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2rem;
+
+}
+
+.titulo-Experiencia h3{
+font-size: 23px;
+color: steelblue;
+text-transform: uppercase;
+
+}
+
+.titulo-Experiencia h4{
+margin-bottom: 0;
+}
+
+.titulo-Experiencia .opaco{
+    opacity: 0.4;
+    color: black;
+    text-transform: lowercase;
+    font-size: 19px;
+}
+
+.exp-imag{
+    text-align: center;
+
+}
+
+.exp-imag img{
+    margin: 1rem;
+    width: 75%;
+    border-radius: 85px;
+}
+.exp-parrafo{
+    line-height : 22px;
+
+}
+
+@media (min-width: 768px){
+    .seccion-exp {
+           display: grid;
+           grid-template-columns: 50% 50%;
+           align-items: center;           
+       }
+       .seccion-exp p{
+           padding-top: 0;
+           line-height : 22px;
+       }
+       .seccion-exp img{
+        margin-left: 3rem;
+    }
+ 
+   
+   }
+
+
+
+   /*seccion habilidades */
+
+   .card-progress {
+    padding: 1rem;
+}
+
+.card-progress h3{
+    font-size: 1.25rem;
+
+}
+
+.progreso{
+    margin: 1.5rem auto;
+}
+
+.progreso > p{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+progress {
+    width: 100%;
+    height: 1rem;
+    background-color: gray;
+}
+
+
+@media (min-width: 768px){
+
+.habilidades .hab-desktop{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+    align-content: center;
+}
+
+}
+
+
+.certificaciones{
+    background-color: #f2f2f2;
+    border: 2px solid rgb(255, 255, 255, 0.5); /* sera un color blanco con transparencia */
+}
+
+
+.h3-certi{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.img-cert{
+    margin-top: 2rem;
+    text-align: center;
+    overflow:hidden;
+}
+
+.img-cert img{
+    width: 100%;
+    border: solid black;
+}
+
+.img-cert:hover img{
+    -webkit-transform:scale(0.95);
+    -moz-transform:scale(0.95);
+    -ms-transform:scale(0.95);
+    -o-transform:scale(0.95);
+    transform:scale(0.95);
+}
+
+@media (min-width: 768px){
+
+    .certificaciones{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        justify-content: space-between;
+        align-content: center;
+    }
+    .img-cert .img-azure {
+        margin-left: 1rem;
+    }
+    
+    
+    }
+
+
+    /* seccion contacto */
+
+    .contac{
+      
+
+        padding-bottom: 3rem;
+    }
+
+    .casillas{
+        overflow:hidden;
+    }
+    .card {
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .casillas:hover .card:hover{
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+    }
+
+
+
+    .box-shadow {
+        box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 25%);
+    }
+    .bg-white {
+        background-color: white;
+    }
+    
+    .card > svg{
+        width: 2rem;
+    height: 2rem;
+    fill: rgb(3,152, 158);
+    }
+
+    .card a{
+        text-decoration: none;
+        color:rgb(3,152, 158);
+    }
+    @media (min-width: 1000px){
+
+        .casillas{
+            display: grid;
+            grid-template-columns: repeat(4,24%);
+            justify-content: space-between;
+
+        }
+
+    
+        
+        
+        }
+
+        @media (min-width: 768px){
+
+            .casillas{
+                display: grid;
+                grid-template-columns: repeat(2,48%);
+                justify-content: space-between;
+    
+            }
+    
+        
+            }
+
+    /* empieza footer*/
+
+   
+    .foote{
+        background-color:  rgb(3,152, 158);
+        padding: 1.9rem 0;
+
+
+    }
+    
+    .dev-erick h4{
+        color: #fff;
+            padding-top: 20px;
+            text-align: center;
+            font-size: -4rem;
+    }
+
+
+    .contenido-foot .menu {
+        display: none;
+}
+
+
+    @media (min-width: 768px){
+
+        .contenido-foot{
+            display: grid;
+            grid-template-columns: repeat(2,48%);
+            justify-content: space-between;
+          
+
+        }
+
+        .contenido-foot .menu{
+            text-align: left;
+            display: block !important;
+        }
+        .foote .menu a{
+            margin-right: 10px;
+            color: #fff;
+            padding-top: 47px;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            font-size: 0.9em;
+        }
+        
+        .dev-erick h4{
+            color: #fff;
+                padding-top: 20px;
+                text-align: right;
+                font-size: -3rem;
+        }
+    
+        }
